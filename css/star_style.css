@@ -1,0 +1,33 @@
+@font-face {
+    font-family: star;
+    src: url("../font/Starjedi.ttf");
+}
+.image-box-star{
+	width: 100%;
+    height: 600px;
+    background-color: #b9afaf;
+    min-height: 300px;
+    background-color: black;
+    font-size:200px;
+    font-family:star;
+    color: black;
+    text-transform: lowercase; 
+}
+.image-box-star .text-box{
+	text-align:center;
+	padding-top: 130px;
+	color:#ffe81f;	
+}
+.image-box-star .text-1{
+	padding-bottom: 10px;
+	    line-height: 65%;
+}
+.image-box-star hr{
+    width: 110%;
+    position: relative;
+    margin-left: -6%;
+	margin-top: 18px;
+    margin-bottom: -12px;
+    border: 1px solid red;
+     box-shadow: 10px 0px 5px #db0404,-10px 0px 5px #db0404,0px 2px 5px #db0404,0px -2px 5px #db0404; 
+}

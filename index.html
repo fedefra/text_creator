@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Create your text</title>
+<link href="css/style.css" rel="stylesheet" />
+
+<script  src="script.js"></script>
+</head>
+<body>
+	<div class="container">
+		<header>
+			<div class="box-input">
+				<span class="logo">Text Creator</span>
+				<span><input type="text" id="first_row" placeholder="First row"></span>
+				<span><input type="text" id="second_row" placeholder="Second row"></span>
+				<select id="select">
+					<option value="" disabled selected>Select style</option>
+					<option class="option-strange" value="stranger">Stranger Thinks</option>
+					<option value="star">Star Wars</option>
+					<option value="breaking">Breaking Bad</option>
+				</select>		
+				<span><button class="button" onclick="generate()">Create</button></span>
+
+			</div>
+		</header>
+		<div id="container_image">
+			<!--string=<div id="image_box" class="image-box-star ">
+							<div class="text-box center">
+								<div id="text_1" class="shadow-text text-1">
+									<span></span>'+
+								</div>
+								<hr></hr>
+								<div id="text_1" class="shadow-text text-1">
+									<span></span>
+								</div>
+							</div>-->
+			</div>
+		</div>
+		<footer>
+			<b>Do you want the PNG?</b><br>
+			<ul class="center">
+				<li> Press <i>"Windows Logo button + Stamp" for a screenshot</i></li>
+				<li> Go to <i>"C:\Users\YourUser\Pictures"</i></li>	
+				<li> Here you can found the screenshot</li>
+				<li> Cut out the image as you like</li>
+			</ul>
+		</footer>
+	</div>
+</body>
+</html>
