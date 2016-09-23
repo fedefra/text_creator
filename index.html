@@ -2,49 +2,74 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>Create your text</title>
+<title>TextLogo Creator</title>
 <link href="css/style.css" rel="stylesheet" />
-
-<script  src="script.js"></script>
+<link href="css/media.css" rel="stylesheet" />
+<script src="js/script.js"></script>
 </head>
 <body>
 	<div class="container">
 		<header>
-			<div class="box-input">
-				<span class="logo">Text Creator</span>
-				<span><input type="text" id="first_row" placeholder="First row"></span>
-				<span><input type="text" id="second_row" placeholder="Second row"></span>
+				<div class="box-logo">
+					<span class="logo">TextLogo Creator</span>
+				</div>
+				<div class="box-input">
+				<span><input type="text" id="first_block" placeholder="First block"></span>
+				<span><input type="text" id="second_block" placeholder="Second block"></span>
 				<select id="select">
 					<option value="" disabled selected>Select style</option>
-					<option class="option-strange" value="stranger">Stranger Thinks</option>
-					<option value="star">Star Wars</option>
-					<option value="breaking">Breaking Bad</option>
-				</select>		
-				<span><button class="button" onclick="generate()">Create</button></span>
+					<optgroup label="CLASSIC">
+						<option  value="classic">Arial</option>
+						<option  value="classic">Arial Black</option>
+						<option  value="classic">Courier New</option>
+						<option  value="classic">Georgia</option>
+						<option  value="classic">Helvetica</option>
+						<option  value="classic">Impact</option>
+						<option  value="classic">Tahoma</option>
+						<option  value="classic">Times New Roman</option>
+						<option  value="classic">Verdana</option>
+					</optgroup>
+					<optgroup label="SPECIAL">
+						<option value="stranger">Stranger Thinks</option>
+						<option value="star">Star Wars</option>
+						<option value="breaking">Breaking Bad</option>
+						<option value="harry">Harry Potter</option>
+						<option value="death">Death Note</option>
+						</optgroup>
+				</select>
+					<span><input type="number" id="font-size" placeholder="Font-size(px)"></span>
+				</div>
+				<div class="second-row-input">
+						<span><input type="number" id="distance" placeholder="Distance block(px)"></span>
+					<span>
+						<select id="text_deco">
+							<option value="" disabled selected>Text decoration</option>
+							<option value="underline">Underline</option>
+							<option value="line-through">Line-through</option>
+							<option value="overline">Overline</option>
+						</select>
+					</span>
+					<span>Color:<input id="text-color" value="#FFFFFF" type="color"></span>
+					<span>Background:<input id="background-color" type="color"></span>				
 
 			</div>
+			<div>(With special style all settings(excep first and second block) will be ignored)</div>
+				<div class="box-button">
+					<span><button class="button" onclick="generate()">Create</button></span>
+				</div>
 		</header>
 		<div id="container_image">
-			<!--string=<div id="image_box" class="image-box-star ">
-							<div class="text-box center">
-								<div id="text_1" class="shadow-text text-1">
-									<span></span>'+
-								</div>
-								<hr></hr>
-								<div id="text_1" class="shadow-text text-1">
-									<span></span>
-								</div>
-							</div>-->
-			</div>
 		</div>
 		<footer>
 			<b>Do you want the PNG?</b><br>
 			<ul class="center">
 				<li> Press <i>"Windows Logo button + Stamp" for a screenshot</i></li>
-				<li> Go to <i>"C:\Users\YourUser\Pictures"</i></li>	
-				<li> Here you can found the screenshot</li>
-				<li> Cut out the image as you like</li>
+				<li> Go to <i>"C:\Users\YourName\Pictures"</i></li>	
+				<li> Here you can find the screenshot</li>
+				<li> Cut out the image as you like :)</li>
 			</ul>
+				<br>(For MAC and linux you can found easily on Google how to do)
+
 		</footer>
 	</div>
 </body>

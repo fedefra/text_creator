@@ -2,27 +2,48 @@ html,body{
 	margin: 0;
 	height:100%
 }
-input, select{
+header,footer,button{
+   	    font-size: 20px;
+	}
+header{
+	background-color: #0080dc;	
+    width: auto;
+    padding: 15px;
+    color:#FFF;
+    text-align:center;
+}
+input[type="text"], input[type="number"],select{
 	padding:10px;
 	border-radius: 5px;
 	border: 0;
+	color:#FFF;
 	background-color: #6fa8d1;
-    color: white;
     border: 2px solid #0072c3;
 }
+.box-logo{
+    width: 100%;
+    text-align: center;
+}
 .logo{
-    float: left;
+	padding: 18px;
     font-size: 28px;
     font-family: cursive;
-    color: white;
     font-style: italic;   
+}
+.box-input{
+    padding: 20px;
+	text-align:center;
+}
+.box-button{
+    text-align: center;
+	padding: 10px;
 }
 .center{
 	margin: auto;
 	display:table;	
 }
 #container_image{
-	height:600px;
+	min-height:600px;
 }
 ::-webkit-input-placeholder {
    color: white;
@@ -39,12 +60,6 @@ input, select{
 :-ms-input-placeholder {  
    color: white;  
 }
-.box-input{
-    padding: 20px;
-	background-color: #0080dc;
-
-	text-align:center;
-}
 .button{	
 	cursor: pointer;
 	background-color: #1f3f56;
@@ -52,11 +67,18 @@ input, select{
     margin-left: 50px;
     border: 0;
     border-radius: 5px;
-    width: 110px;
-    height: 35px;
+	padding: 10px;
 }
-.box-info{
-	position:absolute;	
+.text-box-special{
+	padding-top:160px;
+	text-align:center;
+}
+
+.second-row-input{
+    padding-bottom: 20px;
+}
+.second-row-input span{
+	margin-right:10px;
 }
 footer{
 	background-color: #0080dc;
@@ -66,4 +88,17 @@ footer{
 }
 footer ul{
     list-style-type: decimal;
-   }
+}
+.image-box-classic{
+		width: 100%;
+     height: 100%;
+         text-align: center;
+         
+}
+.image-box .text-box{
+	text-align: center;
+    padding-top: 80px;
+}
+.image-box{
+	min-height:600px;
+}

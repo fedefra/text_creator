@@ -1,0 +1,43 @@
+@media (min-width: 1600px) {
+}
+@media (min-width: 1400px) {	
+	input[type="text"], input[type="number"],select{
+		font-size:25px;
+	}
+	.logo {
+   	 font-size: 45px;
+	}
+   header,footer,button{
+   	    font-size: 30px;
+	}
+	input[type="color"]
+	{
+    	height: 35px;
+	}
+   #container_image{
+		min-height:800px;
+	}
+	.image-box{
+	min-height:800px;
+	}
+	.image-box-classic .text-box {
+	    padding-top: 130px;
+	}
+	.text-box-special{
+		padding-top:200px;
+	}
+}
+
+@media (max-width: 979px) {
+}
+@media (max-width: 767px) {
+}
+
+@media (max-width: 480px) {
+}
+
+@media (max-width: 425px) {
+}
+
+@media (max-width: 375px) {
+}

@@ -1,0 +1,45 @@
+@font-face {
+    font-family: breaking;
+    src: url("../font/Heart Breaking_Bad.otf"),url("../font/Heart Breaking_Bad.eot");     
+}
+.image-box-breaking{
+	width: 100%;
+    height: 100%;
+	color:white;	
+	background: rgba(1,50,0,1);
+	background: -moz-linear-gradient(45deg, rgba(1,50,0,1) 0%, rgba(1,50,0,1) 7%, rgba(27,59,3,1) 47%, rgba(45,65,6,1) 76%, rgba(75,170,94,1) 100%);
+	background: -webkit-gradient(left bottom, right top, color-stop(0%, rgba(1,50,0,1)), color-stop(7%, rgba(1,50,0,1)), color-stop(47%, rgba(27,59,3,1)), color-stop(76%, rgba(45,65,6,1)), color-stop(100%, rgba(75,170,94,1)));
+	background: -webkit-linear-gradient(45deg, rgba(1,50,0,1) 0%, rgba(1,50,0,1) 7%, rgba(27,59,3,1) 47%, rgba(45,65,6,1) 76%, rgba(75,170,94,1) 100%);
+	background: -o-linear-gradient(45deg, rgba(1,50,0,1) 0%, rgba(1,50,0,1) 7%, rgba(27,59,3,1) 47%, rgba(45,65,6,1) 76%, rgba(75,170,94,1) 100%);
+	background: -ms-linear-gradient(45deg, rgba(1,50,0,1) 0%, rgba(1,50,0,1) 7%, rgba(27,59,3,1) 47%, rgba(45,65,6,1) 76%, rgba(75,170,94,1) 100%);
+	background: linear-gradient(45deg, rgba(1,50,0,1) 0%, rgba(1,50,0,1) 7%, rgba(27,59,3,1) 47%, rgba(45,65,6,1) 76%, rgba(75,170,94,1) 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#013200', endColorstr='#4baa5e', GradientType=1 );
+    font-size:200px;
+    font-family:breaking;
+    text-transform: lowercase; 
+}
+.image-box-breaking .text-1{
+      line-height: 84%;
+       height: 145px;	
+}
+.image-box-breaking .first-char{
+    text-transform: uppercase;
+    color: white;
+    background-color: green;
+    width: 147px;
+	height: 145px;
+    margin-right: 20px;
+    display: inline-block;
+	background: rgba(88,173,96,1);
+	background: -moz-linear-gradient(-45deg, rgba(88,173,96,1) 0%, rgba(88,173,96,1) 20%, rgba(0,0,0,1) 100%);
+	background: -webkit-gradient(left top, right bottom, color-stop(0%, rgba(88,173,96,1)), color-stop(20%, rgba(88,173,96,1)), color-stop(100%, rgba(0,0,0,1)));
+	background: -webkit-linear-gradient(-45deg, rgba(88,173,96,1) 0%, rgba(88,173,96,1) 20%, rgba(0,0,0,1) 100%);
+	background: -o-linear-gradient(-45deg, rgba(88,173,96,1) 0%, rgba(88,173,96,1) 20%, rgba(0,0,0,1) 100%);
+	background: -ms-linear-gradient(-45deg, rgba(88,173,96,1) 0%, rgba(88,173,96,1) 20%, rgba(0,0,0,1) 100%);
+	background: linear-gradient(135deg, rgba(88,173,96,1) 0%, rgba(88,173,96,1) 20%, rgba(0,0,0,1) 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#58ad60', endColorstr='#000000', GradientType=1 );
+}
+.image-box-breaking .text-2{
+	line-height: 169px;
+	margin-left: 145px;
+   }

@@ -1,23 +1,20 @@
 @font-face {
     font-family: strange;
-    src: url("../font/Benguiat Bold.ttf");
+    src:url("../font/Benguiat_Bold.ttf"),url("../font/Benguiat_Bold.eot");
 }
 .image-box-strange{
 	width: 100%;
-    height: 600px;
+    height: 100%;
     background-color: black;
     font-size:150px;
     font-family:strange;
     text-transform: uppercase; 
 }
-.image-box-strange .text-box{
-	text-align:center;
-	padding-top: 130px;
-}
 .image-box-strange .line-top{
 	border: 2px solid #db0404;
     padding: 2px;
 	background-color: #ad0000;	
+	 box-shadow: 5px 0px 5px #db0404,-5px 0px 5px #db0404,0px 2px 5px #db0404,0px -2px 5px #db0404; 
 	}
 .image-box-strange .shadow-text{
 	-webkit-text-stroke-width: 2px;
@@ -34,16 +31,16 @@
        vertical-align: middle;
 }
 .image-box-strange .text-2{
-    position: absolute;
+    position: relative;
     width: 100%;
-    text-align: center; 
-    top: 340px;
+    text-align: center;
+    top: -55px;
     z-index: 999;
 }
 .image-box-strange .text-2-sub{
     background-color: black;
     padding-left: 5px;
     padding-right: 5px;
-	line-height: 75%;
+	line-height: 78%;
     display: inline-block;
 }
