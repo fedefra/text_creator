@@ -1,5 +1,3 @@
-@media (min-width: 1600px) {
-}
 @media (min-width: 1400px) {	
 	input[type="text"], input[type="number"],select{
 		font-size:25px;
@@ -26,18 +24,4 @@
 	.text-box-special{
 		padding-top:200px;
 	}
-}
-
-@media (max-width: 979px) {
-}
-@media (max-width: 767px) {
-}
-
-@media (max-width: 480px) {
-}
-
-@media (max-width: 425px) {
-}
-
-@media (max-width: 375px) {
 }

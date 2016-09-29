@@ -36,7 +36,7 @@ function generate(){ //GENERATE TEXTLOGO BASED ON OPTION CHOICE
 										'</div>'+
 									'</div>'+
 								'</div>';
-		    	innerHtml(string);
+		    	innerHtml(string,style);
 		    	document.getElementById("image_box_classic").style.fontSize = fontsize+'px';
 		    	document.getElementById("image_box_classic").style.fontFamily =select.options[select.selectedIndex].text;
 		    	document.getElementById("image_box_classic").style.color = document.getElementById('text-color').value;
@@ -47,7 +47,7 @@ function generate(){ //GENERATE TEXTLOGO BASED ON OPTION CHOICE
 			break;
 			
 			case 'stranger':
-				checkCSS(style) ;
+				checkCSS(style);
 		    var first_char=first_row.charAt(0);
 		    var last_char=first_row.slice(-1);
 		    var middle_string = first_row.slice(1, -1);
@@ -62,7 +62,7 @@ function generate(){ //GENERATE TEXTLOGO BASED ON OPTION CHOICE
 							'<div class="shadow-text text-2">'+
 							'<span class="text-2-sub">'+second_row+'</span>'+
 							'</div>';
-		    	innerHtml(string);
+		    innerHtml(string);	
 		    break;		
 		case 'star':
 				checkCSS(style) ;
@@ -199,16 +199,26 @@ function loadCSS(style) //CREATE LINK AND ADD TO HEAD
 	{
 		 var head  = document.getElementsByTagName('head')[0];
 		 var link  = document.createElement('link');
-		 link.rel  = 'stylesheet';
-		link.type = 'text/css';
-		link.media = 'all';
-	    link.href = 'css/'+style+'_style.css';	    
-	    head.appendChild(link);	
-	    return true;	    
+			link.rel  = 'stylesheet';
+			link.type = 'text/css';
+			link.media = 'all';
+		    link.href = 'css/'+style+'_style.css';	    
+		    head.appendChild(link);	
+		  return true;	    
 	}
-function innerHtml(string){ //INNER HTML WITH TEXT
-		document.getElementById('container_image').innerHTML=string;
-	}	
+function innerHtml(string,style){ //INNER HTML WITH TEXT
+
+	if(style=='classic')
+		{
+		document.getElementById('container_image').innerHTML=string; 
+		}
+	else{
+		document.getElementById('container_image').innerHTML="<div class='loading'>Loading...</div>";
+		setTimeout(function() { document.getElementById('container_image').innerHTML=string; }, 1000);
+
+	}
+		
+}	
 
 
 
